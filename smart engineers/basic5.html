@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Creating an HTML Element</title>
+ <style>
+ myHero { 
+ display: block; 
+ background-color: #ddd; 
+ padding: 50px; 
+ font-size: 30px; 
+ } 
+ </style> 
+</head> 
+<body> 
+<h1>My First Heading</h1> 
+<p>My first paragraph.</p> 
+<myHero>My First Hero is DAD</myHero> 
+</body> 
+</html> 
+Advanced Selectors 
+Descendant Selector
+p b { color: Blue; } 
+Ex: <p>Hello, <b>world</b> - what a <b>beautiful</b> day!</p> Hello, 
+<b>world</b> - what a <b>beautiful</b> day! 
+Child Selector
+div.highlighted > b { color: Blue; } 
+div.highlighted > ul > li > a { color: DarkOrange; } 
+Sibling Selector
+h2 ~ p { font-style: italic; } 
+Adjacent Sibling Selector
+h2 + p { font-style: italic; } 
+CSS Box Model
+.box { background-color: Orange;} 
+<div class="box">Block 1</div><div class="box">Block 2</div> 
+<br> 
+<span class="box">This is an inline element... </span><span 
+class="box">and so is this</span> 
+Margin properties
+.box { background-color: DarkSeaGreen; width: 100px; height: 100px;
+    margin-top: 10px; margin-right: 5px; margin-bottom: 10px; margin-left: 
+    5px; } 
+    Margin shorthand property 
+    <div class="box" style="margin: 10px 10px 10px 10px;"> Box </div> 
+    Relative margins
+    Usually done by either using a relative size unit, for instance the em 
+    unit (1 em equals the size of the current font), or simply by specifying a 
+    percentage-based value. 
+    CSS Box Model
+    Border
+    .box { width: 100px; height: 100px; border-color: CornflowerBlue; border-width: 2px; border-style: solid; } 
+    Margin and Float
+    margin: 10px; float: left; 
+    Border Radius
+    .box { width: 100px; height: 100px; border: 3px solid CornflowerBlue; 
+    border-radius: 5px; } 
+    .circle { width: 100px; height: 100px; background-color: CornflowerBlue; 
+        border-radius: 50%; } 
+        Padding
+        padding is an inner, invisible border around your element. 
+        CSS Box Model
+        Visibility Property
+        .box { width: 100px; height: 100px; background-color: CornflowerBlue; } 
+        </style> <div class="box">Box 1</div> <div class="box" style="visibility: 
+        hidden;">Box 2</div> 
+        Display property
+        <style type="text/css"> .box { width: 100px; height: 100px; background-color: CornflowerBlue; } </style> <div class="box">Box 1</div> <div 
+        class="box" style="display: none;">Box 2</div> <div class="box">Box 
+        3</div> 
